@@ -1,0 +1,426 @@
+body {
+    background-color: #111440;
+}
+
+hr {
+    color: #f2f2f2;
+}
+
+.added {
+    color: #F2F2F2;
+    background-color: rgb(109, 192, 109);
+    border-color: #212529
+}
+
+
+.text-white {
+    font-size: 45px;
+}
+
+/* div do header */
+
+.d-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+/* tamanho da barra de pesquisa */
+
+.form-control {
+    position: relative;
+    margin-left: 0px;
+    float: left;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.searchbar {
+    margin-top: 4vw;
+    display: inline;
+    position: absolute;
+}
+
+/* classe da imagem da logo */
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.link-logo {
+    padding-top: 5px;
+    padding-right: 5px;
+    /* margin-left: 200px; */
+    width: fit-content;
+    height: auto;
+}
+
+.lupa {
+    height: auto;
+    float: left;
+    width: 24px
+}
+
+.icon-search:hover {
+    color: #F2F2F2;
+}
+
+.btn-lupa {
+
+    position: relative;
+    width: 50px;
+    height: 38px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    left: -49px;
+}
+
+.btn:hover {
+    background-color: #8b89d9;
+    color: #f2f2f2;
+}
+
+/* icones da direita em cima */
+
+.topright-icons {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.topright-div {
+    margin-top: 4vw;
+    width: 6vw;
+    top: 10vw;
+    float: right;
+    right: 0;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+.redondo {
+    border-radius: 1rem;
+}
+
+.bg-purple {
+    background-color: #111440;
+    color: white;
+}
+
+.bg-purple2 {
+    background-color: #38358C;
+}
+
+.login {
+    color: white;
+    display: flex;
+    margin-left: 90%;
+    margin-top: 10%;
+}
+
+.branco {
+    color: #f2f2f2;
+    margin-left: 100px;
+}
+
+.branco:focus {
+    color: #F2F2F2;
+}
+
+.branco:hover {
+    color: aqua;
+}
+
+.f2 {
+    color: #f2f2f2;
+}
+
+.sobre:hover {
+    color: aqua;
+}
+
+.form-inline {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.formdisplay {
+    padding: 0px;
+    width: 600px;
+}
+
+.lista {
+    display: flex;
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    margin-bottom: 0px;
+}
+
+.bottom-icons {
+    width: 40px;
+    height: auto;
+    display: flex;
+    margin-right: 10px;
+}
+
+.container-fluid-navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.produtos-item {
+    color: #F2F2F2;
+}
+
+.produtos-item:hover {
+    color: #111440;
+}
+
+/* lista de produtos */
+
+.wrapper {
+    margin-top: 30px
+}
+
+.card {
+    border: 1px solid #111440;
+    cursor: pointer
+}
+
+.weight {
+    margin-top: -65px;
+    transition: all 0.5s
+}
+
+.weight small {
+    color: #e2dede
+}
+
+.buttons {
+    padding: 10px;
+    background-color: #38358c;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 7px;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #191c59;
+    border-radius: 50%;
+    position: absolute;
+    left: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: #f2f2f2;
+    opacity: 0
+}
+
+.cart-button {
+    height: 48px
+}
+
+.cart-button:focus {
+    box-shadow: none
+}
+
+.cart {
+    position: relative;
+    height: 48px !important;
+    width: 50px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 1s ease-in-out;
+    overflow: hidden
+}
+
+.cart-button.clicked span.dot {
+    animation: item 0.3s ease-in forwards
+}
+
+.card-clicked {
+    background-color: #8b89d9;
+}
+
+@keyframes item {
+    0% {
+        opacity: 1;
+        top: 30%;
+        left: 30%
+    }
+    25% {
+        opacity: 1;
+        left: 26%;
+        top: 0%
+    }
+    50% {
+        opacity: 1;
+        left: 23%;
+        top: -22%
+    }
+    75% {
+        opacity: 1;
+        left: 19%;
+        top: -18%
+    }
+    100% {
+        opacity: 1;
+        left: 14%;
+        top: 28%
+    }
+}
+
+.card:hover .buttons {
+    opacity: 1
+}
+
+.card:hover .weight {
+    margin-top: 10px
+}
+
+.card:hover {
+    transform: scale(1.04);
+    z-index: 2;
+    overflow: hidden
+}
+
+.dropdown-menu {
+    background-color: #38358C;
+    color: #8b89d9;
+    margin-left: 100px;
+}
+
+/* searchbar */
+
+@media screen and (max-width: 600px) {
+    .form-control {
+        position: relative;
+        margin-left: 0px;
+        float: left;
+        width: 250px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .form-control {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sobre {
+        text-align: center;
+    }
+    .branco {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .dropdown-menu {
+        margin-left: 0px;
+    }
+    .produtos-item {
+        text-align: center;
+    }
+}
+
+/* unvisited link */
+
+a {
+    text-decoration: none
+}
+
+.card {
+    color: black;
+}
+
+.card:link {
+    color: black;
+}
+
+/* visited link */
+
+.card:visited {
+    color: black;
+}
+
+/* mouse over link */
+
+.card:hover {
+    color: black;
+}
+
+/* selected link */
+
+.card:active {
+    color: black;
+}
+
+/* =====================================================================================================================================================================
+===================================================================================================================================================================== */
+
+#paginate {
+    width: 100%;
+    margin: 32px auto;
+}
+
+#paginate .item {
+    border-bottom: 1px solid hsl(32, 98%, 12%);
+    padding: 16px 32px;
+}
+
+#paginate .item:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+#paginate .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+#paginate .controls div {
+    cursor: pointer;
+    /* border: 1px solid #eee; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14;
+}
+
+#paginate .controls div:not(.numbers), #paginate .controls div.numbers div {
+    width: 40px;
+    height: 40px;
+}
+
+#paginate .controls div.numbers div:hover, #paginate .controls div.numbers div.active {
+    color: aqua
+}
+
+/* =====================================================================================================================================================================
+===================================================================================================================================================================== */

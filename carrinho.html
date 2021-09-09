@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="icon" href="./imagens/iconelogo.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web\css/all.min.css">
+  
+  <link rel="stylesheet" href="./css/carrinho1.css">
+</head>
+
+<body>
+
+  <header>
+    <div style="width: 100%; display: block;">
+  
+      <div style="float: left; padding: 15px;">
+        <a href="index.html">
+          <img class="logo" src="./imagens/logo5.png">
+        </a>
+      </div>
+  
+      <div style="float: left;">
+  
+  
+  
+        <form class="formdisplay ">
+          <div>
+            <div class="searchbar">
+              <input class="form-control redondo search_input" id="searchBar" type="text" name="searchBar" placeholder="Oque está procurando?"
+                aria-label="Search">
+              <button class="btn btn-lupa" type="submit">
+                <i class="fas fa-search icon-search"></i>
+  
+              </button>
+            </div>
+          </div>
+        </form>
+  
+      </div>
+  
+      <div style="float: right; width: 80px; display: block;">
+        <h6 class="f2" id="nomeDoUsuario"></h6>
+        <div id="gerenciar">
+         
+         </div>
+        <div class="topright-div" style="width: 100%; text-align: right; display: flex; ">
+         
+        
+          <a class="link-topright" href="login.html" style="text-decoration: none; display: flex;">
+           
+            <img class="topright-icons" src="./imagens/profile.png">
+          </a>
+          <a class="link-topright" href="carrinho.html" style="text-decoration: none;  display: flex;">
+            <img class="topright-icons" src="./imagens/cart.png">
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div style="clear: both;"></div>
+  
+  
+  
+  <!-- navbar -->
+  
+  <hr>
+  
+  
+  
+  <nav class="navbar navbar-expand-lg bg-purple">
+    <div class="container-fluid ">
+      <button class="navbar-toggler" style="background-color: #38358C; width: 100%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"
+            style="color: #F2F2F2; margin-top: auto; margin-bottom: auto;"></i></span>
+      </button>
+  
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+  
+            <a class="nav-link active f2 sobre" aria-current="page" href="./sobre.html">Sobre</a>
+          </li>
+  
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle branco " href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="camera" href="categoria.html"> Cameras</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="lente" href="categoria.html"> Lentes</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="microfone" href="categoria.html"> Microfones</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="luz" href="categoria.html"> Iluminação</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="tripe" href="categoria.html"> Tripés</a></li>
+             
+  
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="index.html">Home</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="contato.html">Contato</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="./duvidas1.html">Duvidas</a>
+          </li>
+  
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  </header>
+
+  <hr>
+
+  <div >
+    <div>
+
+      <h1 class="f2" id="meu">Meu Carrinho</h1>
+      <div id="cartList" class="container-carrinho">
+
+
+
+      </div>
+
+
+      
+      <!-- <h3 id="compra">Resumo da Compra</h3>
+      <div class="container-carrinho preco">
+        <label for="" id="sub">Subtotal:</label>
+        <label for="" id="subtotal">R$ 3.345,99</label>
+        <hr id="hr">
+
+
+        <label for="" id="des">Desconto:</label>
+        <label for="" id="dez">Nenhum</label>
+        <hr id="hr">
+
+        <label for="" id="t">Total:</label>
+        <label for="" id="precofinal">R$ 3.335,99</label>
+
+
+      </div> -->
+
+      <div class="container-carrinho resumo">
+
+        <h3 class="title">Resumo da compra</h3>
+        <div class="soma">
+            <label for="" class="sub">Subtotal:</label>
+            <label for="" id="subtotal" class="preco">R$ 0,00</label>
+        <hr>
+            <label for="" class="des">Desconto:</label>
+            <label for="" class="nenhum">Nenhum</label>
+        <hr>
+            <label for="" class="total">Total:</label>
+            <label for="" id="precofinal" class="final">R$ 0,00</label>
+            
+            
+
+        </div>
+
+        <div class="button">
+          <a href="pagamento.html"><button class="continuar"  onclick="submitTotal()"> Realizar Pagamento</button></a>
+            <a href="index.html"><button class="comprando">Continuar comprando</button></a>
+        </div>
+
+    </div>
+
+      <!-- <div class="funcao">
+        <a href="pagamento.html">
+          <button id="continuar" onclick="submitTotal()">
+            Realizar Pagamento
+          </button>
+        </a>
+        <a href="index.html">
+          <button id="voltar">
+            Continuar Comprando
+          </button>
+        </a>
+      </div> -->
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/carrinho.js"></script>
+  <source src="./js/admCheckHeader.js">
+
+</body>
+
+</html>

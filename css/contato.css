@@ -1,0 +1,58 @@
+.container{
+    width: 100%; 
+    height: 80%; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    margin-block: 4rem;
+}
+#rectangle{
+    width: 31.25rem; 
+    height: 31.25rem; 
+    left: 73px; 
+    border-radius: 1.25rem; 
+    background-color:#FFFAFA;
+    justify-content: center;
+}
+.Entre-em-contato{
+font-size: 1.75rem; 
+    color: black; 
+    text-align: center;
+}
+.horario{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+.botão1{
+    width:18.75rem;
+    top: 26.313rem;
+    color:aliceblue; 
+    align-items: center;
+    height:3rem;
+    justify-content:center;
+    border-radius:1.375rem;
+    background: #504DBA;
+}
+.botão2{
+    width:18.75rem;
+    top: 26.313rem;
+    color:aliceblue; 
+    align-items: center;
+    height:3rem;
+    justify-content:center;
+    border-radius:1.375rem;
+    background: #504DBA;
+}
+.botão3{
+    width:18.75rem;
+    top: 26.313rem;
+    color:aliceblue; 
+    align-items: center;
+    height:3rem;
+    justify-content:center;
+    border-radius:1.375rem;
+    background: #504DBA;
+}
+
+

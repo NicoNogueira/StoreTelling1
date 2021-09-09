@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sobre nós</title>
+ <link rel="icon" href="./imagens/iconelogo.png">
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./SOBRE/sobreCSS/sobre.css">
+ <link rel="stylesheet" href="./css/estilo.css">
+ 
+</head>
+ 
+ 
+
+<header>
+  <div style="width: 100%; display: block;">
+
+    <div style="float: left; padding: 15px;">
+      <a href="index.html">
+        <img class="logo" src="./imagens/logo5.png">
+      </a>
+    </div>
+
+    <div style="float: left;">
+
+
+
+      <form class="formdisplay ">
+        <div>
+          <div class="searchbar">
+            <input class="form-control redondo search_input" id="searchBar" type="text" name="searchBar" placeholder="Oque está procurando?"
+              aria-label="Search">
+            <button class="btn btn-lupa" type="submit">
+              <i class="fas fa-search icon-search"></i>
+
+            </button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+    <div style="float: right; width: 80px; display: block;">
+      <h6 class="f2" id="nomeDoUsuario"></h6>
+      <div id="gerenciar">
+       
+       </div>
+      <div class="topright-div" style="width: 100%; text-align: right; display: flex; ">
+       
+      
+        <a class="link-topright" href="login.html" style="text-decoration: none; display: flex;">
+         
+          <img class="topright-icons" src="./imagens/profile.png">
+        </a>
+        <a class="link-topright" href="carrinho.html" style="text-decoration: none;  display: flex;">
+          <img class="topright-icons" src="./imagens/cart.png">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="clear: both;"></div>
+
+
+
+<!-- navbar -->
+
+<hr>
+
+
+
+<nav class="navbar navbar-expand-lg bg-purple">
+  <div class="container-fluid ">
+    <button class="navbar-toggler" style="background-color: #38358C; width: 100%;" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"
+          style="color: #F2F2F2; margin-top: auto; margin-bottom: auto;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+        <li class="nav-item">
+
+          <a class="nav-link active f2 sobre" aria-current="page" href="./sobre.html">Sobre</a>
+        </li>
+
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle branco " href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Produtos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="camera" href="categoria.html"> Cameras</a></li>
+            <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="lente" href="categoria.html"> Lentes</a></li>
+            <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="microfone" href="categoria.html"> Microfones</a></li>
+            <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="luz" href="categoria.html"> Iluminação</a></li>
+            <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="tripe" href="categoria.html"> Tripés</a></li>
+           
+
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active branco " aria-current="page" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active branco " aria-current="page" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active branco " aria-current="page" href="./duvidas1.html">Duvidas</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+</header>
+
+<hr>
+<body background="imagens/filmes.png">
+     
+  <div class="container" style="width: 100%; height: 100%; justify-content: center; align-items: center; display: flex">
+    <div id="rectangle" style=" display: flex; width: 600px; height: 300px; left: 383px; top: 256px; background-color: #CFCDFF; border-radius: 20px;">
+
+        <div class="container"> <br> 
+        <h1 style="justify-content: center; display: flex; font-size: 30px">Sobre nós</h1>
+          <br>
+        <h6 style="font-size: 20px; text-align: center;">Olá! Nós somos a Storetelling, um novo e-commerce que busca auxiliar criadores
+           e sonhadores a botarem suas histórias nas telinhas e telonas. O que fazemos ? Buscamos tornar viável a compra e aluguel de câmeras
+            e outros equipamentos aos clientes mais modestos ou para os próximos grandes cineastas.</h6>
+       </div> 
+    </div>
+  </div>
+
+        <div class="circulo-div" >
+                    
+             <div class="circulo" style="background-image: url(imagens/yasmim.png);">
+                 
+             </div>
+        
+        
+             <div class="circulo" style="background-image: url(imagens/nicolas\ \(2\).png);">
+             </div>
+
+             <div class="circulo" style="background-image: url(imagens/carol\ \(2\).png);">
+             </div>           
+
+        </div>
+
+</body>
+
+ <br> <br>
+ 
+ <!-- rodapé -->
+ <footer class="text-center text-lg-start bg-purple2 text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 f2 d-none d-lg-block">
+      <span>Nossas redes sociais:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div class="f2">
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center f2 p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+
+    <a class="text-reset fw-bold" href="#">StoreTellingSuporte@gmail.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/script.js"></script>
+  <script src="./js/admCheckHeader.js"></script>
+
+ 
+ 
+ 
+</html>

@@ -1,0 +1,79 @@
+.container-dados{
+    width: 100%; 
+    height: 80%; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex;
+    margin-block: 4rem;
+}
+#rectangle{
+    width: 31.25rem; 
+    height: 31.25rem; 
+    left: 73px; 
+    border-radius: 1.25rem; 
+    background-color:#FFFAFA;
+    justify-content: center;
+    font-size:1.25rem ;
+}
+.editar-nome{
+    font-size: 1.125rem; 
+    color:black; 
+    text-align: center;
+}
+#nome{
+    width: 15.438rem; 
+    height: 2.438rem; 
+    color: black; 
+    background: #8B89D9; 
+    border-radius: 1.25rem;
+    text-align: center; 
+}
+.editar-email{
+    font-size: 1.125rem; 
+    color:black; 
+    text-align: center;
+}
+#email{
+    width: 15.438rem; 
+    height: 2.438rem; 
+    color: black; 
+    background: #8B89D9; 
+    border-radius: 1.25rem; 
+    text-align: center; 
+}
+.editar-endereço{
+    font-size: 1.125rem; 
+    color:black; 
+    text-align: center;
+}
+#endereço{
+    width: 15.438rem; 
+    height: 2.438rem; 
+    color: black; 
+    background: #8B89D9; 
+    border-radius: 1.25rem; 
+    text-align: center; 
+}
+.editar-senha{
+    font-size: 1.125rem; 
+    color:black; 
+    text-align: center;
+}
+#senha{
+    width: 15.438rem; 
+    height: 2.438rem; 
+    color: black; 
+    background: #8B89D9; 
+    border-radius: 1.25rem; 
+    text-align: center; 
+}
+.botão2{
+    width: 15.438rem; 
+    height: 2.438rem; 
+    color: black; 
+    background: #8B89D9; 
+    border-radius: 1.25rem; 
+    font-size: 1.125rem; 
+    color:white; 
+    text-align: center;
+}

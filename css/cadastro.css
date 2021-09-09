@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+  outline: none;
+  border: none;
+}
+
+a{
+    color: rgb(140, 52, 223);
+}
+
+.container-background{
+    padding-top: 6vh;
+    background-image: url('../imagens/wall2.jpeg') ;
+    background-size: cover no-repeat ;
+    background-position-y: none;
+    background-repeat: round;
+}
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(208, 189, 238);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight:bold ;
+    font-size:  .8rem;
+}
+
+input{
+    border-bottom:2px solid rgb(115, 48, 223) ;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color: rgb(62, 13, 102);
+}
+
+
+#button{ 
+    width: 210px;
+    height: 40px; 
+    background:rgba(89, 86, 167, 0.9);
+    color: #fffefe; 
+    border-radius: 10px;  
+    border-width: 0px; 
+    outline:none;
+}
+#button:hover{
+    background-color: rgb(95, 36, 149);
+}
+
+#agreement{
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label{
+  display: inline-block;  
+  width: auto;
+
+}
+
+#name{
+    background-color:rgb(208, 189, 238);
+}
+
+#email{
+    background-color:rgb(208, 189, 238);
+}
+#lastname{
+    background-color:rgb(208, 189, 238);
+}
+
+#password{
+    background-color:rgb(208, 189, 238);
+}
+
+#senha{
+    background-color:rgb(208, 189, 238);
+}
+
+.error-validation{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}
+
+footer{
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 280px) { 
+    #main-container {
+        width: 100%;
+        height: 100%;
+
+}
+
+}

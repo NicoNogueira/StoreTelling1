@@ -1,0 +1,36 @@
+.container{
+    width: 100%; 
+    height: 80%; 
+    display: flex;
+    justify-content: center; 
+}
+.rectangle{
+    width: 30rem;
+    height: 20rem;
+    display: flex; 
+    border-radius: 1.25rem; 
+    background-color:#DDD5EF;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+    margin-block: 5%;
+}
+.container-top label{
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-block: 5%;
+}
+.comprovante{
+    font-size: 1rem;
+}
+.final button{
+    color: white; 
+    background: #38358C; 
+    border-radius: 1.25rem;
+    font-size: 1.23rem;
+    font-family: roboto;
+    outline: none;
+    border: 0rem;
+    margin-block: 27%;
+    width: 30%;
+}

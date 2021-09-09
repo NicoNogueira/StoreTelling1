@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Telling</title>
+    <link rel="icon" href="./imagens/iconelogo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web\css/all.min.css">
+    <link rel="stylesheet" href="./css/login-teste.css">
+    <link rel="stylesheet" href="./css/pagamento.css">
+
+</head>
+
+<body onload="cavalo()">
+
+  <header>
+    <div style="width: 100%; display: block;">
+  
+      <div style="float: left; padding: 15px;">
+        <a href="index.html">
+          <img class="logo" src="./imagens/logo5.png">
+        </a>
+      </div>
+  
+      <div style="float: left;">
+  
+  
+  
+        <form class="formdisplay ">
+          <div>
+            <div class="searchbar">
+              <input class="form-control redondo search_input" id="searchBar" type="text" name="searchBar" placeholder="Oque está procurando?"
+                aria-label="Search">
+              <button class="btn btn-lupa" type="submit">
+                <i class="fas fa-search icon-search"></i>
+  
+              </button>
+            </div>
+          </div>
+        </form>
+  
+      </div>
+  
+      <div style="float: right; width: 80px; display: block;">
+        <h6 class="f2" id="nomeDoUsuario"></h6>
+        <div id="gerenciar">
+         
+         </div>
+        <div class="topright-div" style="width: 100%; text-align: right; display: flex; ">
+         
+        
+          <a class="link-topright" href="login.html" style="text-decoration: none; display: flex;">
+           
+            <img class="topright-icons" src="./imagens/profile.png">
+          </a>
+          <a class="link-topright" href="carrinho.html" style="text-decoration: none;  display: flex;">
+            <img class="topright-icons" src="./imagens/cart.png">
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div style="clear: both;"></div>
+  
+  
+  
+  <!-- navbar -->
+  
+  <hr>
+  
+  
+  
+  <nav class="navbar navbar-expand-lg bg-purple">
+    <div class="container-fluid ">
+      <button class="navbar-toggler" style="background-color: #38358C; width: 100%;" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"
+            style="color: #F2F2F2; margin-top: auto; margin-bottom: auto;"></i></span>
+      </button>
+  
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+  
+            <a class="nav-link active f2 sobre" aria-current="page" href="./sobre.html">Sobre</a>
+          </li>
+  
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle branco " href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Produtos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="camera" href="categoria.html"> Cameras</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="lente" href="categoria.html"> Lentes</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="microfone" href="categoria.html"> Microfones</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="luz" href="categoria.html"> Iluminação</a></li>
+              <li><a class="dropdown-item produtos-item coisoDaCategoria" onclick=getCategoria() id="tripe" href="categoria.html"> Tripés</a></li>
+             
+  
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="index.html">Home</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="contato.html">Contato</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active branco " aria-current="page" href="./duvidas1.html">Duvidas</a>
+          </li>
+  
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  </header>
+
+    <hr>
+    <div class="container1">
+        <div class="rectangle">
+            <div class="container2">
+                <div class="container2-top">
+                    <label>Adicionar endereço</label>
+                </div>
+
+                <div class="container2-mid">
+                    <input type="text" class="nome-completo" placeholder="Nome Completo">
+                    <input type="text" class="nome-completo" placeholder="Telefone">
+                    <input type="text" class="nome-completo" placeholder="CEP">
+                    <input type="text" class="nome-completo" placeholder="Número da residência">
+                    <input type="text" class="nome-completo" placeholder="Complemento (opcional)">
+                    <input type="text" class="nome-completo" placeholder="Bairro">
+                    <input type="text" class="nome-completo" placeholder="Cidade">
+                </div>
+
+                <div class="container2-bottom">
+                    <div class="bot-botao">
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+            <div class="container3-top">
+                    <label>Pagamento</label>
+                    <div class="forma-de-pagamento">Cartão de crédito</div>
+                    <div class="container3-pagamento">
+                        <div class="container3-mid">
+                            <input type="text" class="nome-cartão" placeholder="Nome">
+                            <input name="credit-number" class="cc-number número-cartão" type="tel" pattern="\d*" maxlength="19" placeholder="Número do Cartão">
+                            <input type="text" class="código-cartão" placeholder="CVV">
+                            
+                        <label>Data de Expiração</label>
+
+                            <div class="selecione-mês">
+                                <label>Mês</label>
+                                 <select class="opções1">
+                                   <option value="01">01</option>
+                                   <option value="02">02</option>
+                                   <option value="03">03</option>
+                                   <option value="04">04</option>
+                                   <option value="05">05</option>
+                                   <option value="06">06</option>
+                                   <option value="07">07</option>
+                                   <option value="08">08</option>
+                                   <option value="09">09</option>
+                                   <option value="10">10</option>
+                                   <option value="11">11</option>
+                                   <option value="12">12</option>
+                                 </select>
+                              </div>
+                              <div class="selecione-mês">
+                                <label>Ano</label>
+                                  <select  class="opções2">
+                                    <option value="18"> 2022</option>
+                                    <option value="19"> 2022</option>
+                                    <option value="20"> 2023</option>
+                                    <option value="21"> 2024</option>
+                                    <option value="21"> 2025</option>
+                                  </select>
+                              </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="container3-parte-de-baixo">
+                        <label>Boleto</label>
+                        <label class="gerar-boleto">Gerar boleto</label>
+                      <a href="./pagamento-efetuado.html" onclick="finalizarPagamento()"><button>Finalizar Pagamento</button></a>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+
+                
+                    </div>
+                </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- rodapé -->
+ <footer class="text-center text-lg-start bg-purple2 text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+      <!-- Left -->
+      <div class="me-5 f2 d-none d-lg-block">
+        <span>Nossas redes sociais:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div class="f2">
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center f2 p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  
+      <a class="text-reset fw-bold" href="#">StoreTellingSuporte@gmail.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/pagamento.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/admCheckHeader.js"></script>
+  
+
+</body>
+
+
+
+</html>

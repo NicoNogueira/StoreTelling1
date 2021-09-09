@@ -1,0 +1,403 @@
+body {
+    background-color: #111440;
+}
+
+hr {
+    color: #f2f2f2;
+}
+
+.text-white {
+    font-size: 45px;
+}
+
+
+/* div do header */
+.d-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+/* tamanho da barra de pesquisa */
+.form-control {
+    position: relative;
+
+    margin-left: 0px;
+    float: left;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.searchbar {
+    margin-top: 4vw;
+    display: inline;
+    position: absolute;
+}
+
+/* classe da imagem da logo */
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.link-logo {
+    padding-top: 5px;
+    padding-right: 5px;
+    width: fit-content;
+    height: auto;
+}
+
+.lupa {
+    height: auto;
+    float: left;
+    width: 24px
+}
+
+.icon-search:hover {
+    color: #F2F2F2;
+}
+
+.btn-lupa {
+    position: relative;
+    width: 50px;
+    height: 38px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    left: -49px;
+}
+
+.btn:hover {
+    background-color: #8b89d9;
+    color: #f2f2f2;
+}
+
+/* icones da direita em cima */
+.topright-icons {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.topright-div {
+    margin-top: 4vw;
+    width: 6vw;
+    top: 10vw;
+    float: right;
+    right: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.redondo {
+    border-radius: 1rem;
+}
+
+.bg-purple {
+    background-color: #111440;
+    color: white;
+}
+
+.bg-purple2 {
+    background-color: #38358C;
+}
+
+.login {
+    color: white;
+    display: flex;
+    margin-left: 90%;
+    margin-top: 10%;
+}
+
+
+.branco {
+    color: #f2f2f2;
+    margin-left: 100px;
+}
+
+.branco:focus {
+    color: #F2F2F2;
+}
+
+.branco:hover {
+    color: aqua;
+}
+
+.f2 {
+    color: #f2f2f2;
+}
+
+.sobre:hover {
+    color: aqua;
+}
+
+.form-inline {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.formdisplay {
+    padding: 0px;
+    width: 600px;
+}
+
+.lista {
+    display: flex;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.rodape {
+    margin-bottom: 0px;
+}
+
+.bottom-icons {
+    width: 40px;
+    height: auto;
+    display: flex;
+    margin-right: 10px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.produtos-item {
+    color: #F2F2F2;
+}
+
+.produtos-item:hover {
+    color: #111440;
+}
+
+.card:hover .buttons {
+    opacity: 1
+}
+
+.card:hover .weight {
+    margin-top: 10px
+}
+
+.card:hover {
+    transform: scale(1.04);
+    z-index: 2;
+    overflow: hidden
+}
+
+.circulo{
+    width: 175px; 
+    height: 175px; 
+    display: inline-block; 
+    margin: 40px; 
+    border-radius: 88px; 
+    background-color: aliceblue;
+}
+
+.circulo-div{
+    width: 100%; 
+    height: 100%; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex
+}
+
+@media screen and (max-width: 1024px){
+    .form-control {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        float: left;
+        width: 400px;
+        margin-left: 20px;
+    }
+    
+    .searchbar {
+        margin-top: 10vw;
+        display: inline;
+        position: absolute;
+    }
+
+    .d-logo {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    
+    /* classe da imagem da logo */
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .link-logo {
+        padding-top: 5px;
+        padding-right: 5px;   
+    }
+    
+    .lupa {
+        height: auto;
+        float: left;
+        width: 24px;
+
+    }
+    
+    .icon-search:hover {
+        color: #F2F2F2;
+    }
+    
+    .btn-lupa {
+        position: relative;
+        width: 50px;
+        height: 38px;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        position: relative;
+        left: -49px;
+    }
+    
+    .btn:hover {
+        background-color: #8b89d9;
+        color: #f2f2f2;
+    }
+    
+    /* icones da direita em cima */
+    .topright-icons {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+    .topright-div {
+        margin-top: 4vw;
+        width: 6vw;
+        top: 10vw;
+        float: right;
+        right: 0;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .redondo {
+        border-radius: 1rem;
+    }
+    
+    .bg-purple {
+        background-color: #111440;
+        color: white;
+    }
+    
+    .bg-purple2 {
+        background-color: #38358C;
+    }
+    
+    .login {
+        color: white;
+        display: flex;
+        margin-left: 90%;
+        margin-top: 10%;
+    }
+    
+    
+    .branco {
+        color: #f2f2f2;
+        margin-left: 100px;
+    }
+    
+    .branco:focus {
+        color: #F2F2F2;
+    }
+    
+    .branco:hover {
+        color: aqua;
+    }
+    
+    .f2 {
+        color: #f2f2f2;
+    }
+    
+    .sobre:hover {
+        color: aqua;
+    }
+    
+    .form-inline {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .formdisplay {
+        padding: 0px;
+        width: 600px;
+    }
+    
+    .lista {
+        display: flex;
+    }
+    
+    .card {
+        margin-left: 10px;
+    }
+    
+    .rodape {
+        margin-bottom: 0px;
+    }
+    
+    .bottom-icons {
+        width: 40px;
+        height: auto;
+        display: flex;
+        margin-right: 10px;
+    }
+    
+    .container-fluid {
+        padding-left: 0px;
+    }
+    
+    .produtos-item {
+        color: #F2F2F2;
+    }
+    
+    .produtos-item:hover {
+        color: #111440;
+    }
+    
+    .card:hover .buttons {
+        opacity: 1
+    }
+    
+    .card:hover .weight {
+        margin-top: 10px
+    }
+    
+    .card:hover {
+        transform: scale(1.04);
+        z-index: 2;
+        overflow: hidden
+    }
+    
+    .circulo{
+        width: 175px; 
+        height: 175px; 
+        display: inline-block; 
+        margin: 40px; 
+        border-radius: 88px; 
+        background-color: aliceblue;
+    }
+    
+    .circulo-div{
+        width: 100%; 
+        height: 100%; 
+        justify-content: center; 
+        align-items: center; 
+        display: flex
+    }
+}
+
+
